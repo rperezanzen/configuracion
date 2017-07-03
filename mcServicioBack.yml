@@ -28,4 +28,7 @@ logging:
 #    registerWithEureka: true
 #  instance:
 #    preferIpAddress: true
+
+application:
+    message: Rodrigo perez
     
