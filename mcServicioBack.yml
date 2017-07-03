@@ -1,0 +1,31 @@
+#variables:
+#  eureka:
+#    host: localhost
+#    port: 8761
+      
+info:
+  component: microservicio servicio
+server:
+  port: 8011
+
+   
+#7minutos
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 420000
+logging:
+  level:
+    com.banamex.microservicio: DEBUG
+    
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://${variables.eureka.host}:${variables.eureka.port}/eureka/
+#    registerWithEureka: true
+#  instance:
+#    preferIpAddress: true
+    
